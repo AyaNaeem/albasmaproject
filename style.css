@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo';
+}
+
+body {
+  background-color: #edd8d0;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* الهيدر */
+.header {
+  background-color: #d1acaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12.8px 16px;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+.logo h2 {
+  color: #444444;
+}
+
+.logo p {
+
+  color: #444444;
+}
+
+/* قائمة التنقل */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: #555;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #d09691;
+}
+
+/* --- السلة --- */
+#cart-mol {
+  display: none;    /* to hide the checkbox*/
+}
+
+#cart-page {
+  position: fixed; /*العنصر يثبت بمكانه  يعني حتى لو عملتِ سكرول، رح يضل العنصر ثابت.*/
+  top: 0;       /*يخليه يبدأ من أعلى اليمين (الزاوية العليا اليمنى للصفحة).*/
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #edd8d0;
+  padding: 20px;
+  transform: translateX(100%);   /*يحرك العنصر كاملًا بمحور X (يمينًا) بمقدار 100% من عرضه → يعني بيكون مخفي برة الشاشة من الجهة اليمنى.*/
+  transition: .3s;/*أي تغيير يصير على الخصائص (مثل transform) رح يصير بانسيابية خلال 0.3 ثانية.*/
+  overflow: auto;/*لو المحتوى الداخلي أطول من الشاشة، يضيف Scroll تلقائي.*/
+  z-index: 20;   /*يخلي العنصر فوق العناصر الأخرى (الأولوية بالعرض).*/
+}
+
+/*يعني الصفحة (السلة) مخفية على يمين الشاشة.
+لما المستخدم يضغط على الزر (اللي متحكم فيه هو الـ checkbox #cart-mol) ويتفعّل:*/
+#cart-mol:checked~#cart-page {
+  transform: translateX(0);
+}
+
+.cart {
+  cursor: pointer;
+  position: relative;   /*  يعتبر مرجع لselectors  الي موجود فيها  absolute*/
+}
+
+.cart-count {
+  background-color: #ff4b4b;
+  color: #fff;
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 50%;
+  position: absolute;    /*  يثبت العداد فوق السلة*/
+  top: -6px;     /*يحرك العنصر للأعلى 6px خارج حدود السلة.*/
+  right: -8px;   /*يحركه لليمين 8px خارج حدود السلة.*/
+}
+.btn {
+  width: 50%;
+  padding: 10px;
+  background: #d1acaa;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.btn:hover {
+  background: rgb(232, 161, 143);
+}
+
+.image{
+  background: url('photo.jpg') no-repeat center center/cover;  /*It specifies the background image,
+   prevents the image from repeating, centers it within the element, and covers the entire element with the image. */
+  position: relative;
+  height: 400px;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 5px 10px rgb(93, 94, 94);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(110, 110, 110, 0.5);
+  /* طبقة مظلمة شفافة للتباين */
+  z-index: 1;/* appear under the greater value */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.image-text h2 {
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgb(2, 20, 137);
+  z-index: 2; 
+}
+
+.image-text p {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.welcome {
+  position: relative;
+  z-index: 2;
+}
+
+/* الأقسام */
+.categories {
+  width: 60%;
+  margin: 40px auto; /* 40px from top and bottom , auto from left and right*/
+  text-align: center;
+}
+
+.categories h2 {
+  color: rgb(2, 20, 137);
+  margin-bottom: 5px;
+}
+
+.categories p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  /*Try to create as many
+   columns as possible that fit the width of the container.*/
+  gap: 20px;
+}
+
+.category {
+  background-color: #d4b5b3;
+  border-radius: 10px;
+  padding: 20px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.category:hover {
+  transform: translateY(-5px);  /*The element moves vertically up by 5 pixels.*/
+  border: 2px solid #ae8075;
+  background-color: #e5cecd;
+}
+
+.category h4 {
+  margin-top: 10px;
+  color: rgb(2, 20, 137);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* المميزات */
+.features {
+  width: 80%;
+  margin: 40px auto 60px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.features h1 {
+  color: rgb(2, 20, 137);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+
+.feature {
+  width: 100px;
+  height: 90px;
+  background-color: #fafafa;
+  padding: 20px 10px;
+  border-radius: 50%;
+  cursor: default;
+}
+
+.feature h6 {
+  margin-top: 10px;
+  color: rgb(2, 20, 137);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* الفوتر */
+.footer {
+  background-color: #d1acaa;
+  color: #555;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: auto;   /* footer stil in the bottom of the page*/
+}
