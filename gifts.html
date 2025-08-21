@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الهدايا - مول البسمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="مول البسمة">
+        <div>
+          <h2>مول البسمة</h2>
+          <p>مكان الراحة والتسوق</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="clothes.html">الملابس</a>
+        <a href="electronics.html">الإلكترونيات</a>
+        <a href="home-garden.html">المنزل والحديقة</a>
+        <a href="sports.html">الرياضة</a>
+        <a href="kids.html">الأطفال</a>
+        <a href="beauty.html">الجمال والعناية</a>
+        <a href="restaurants.html">المطاعم</a>
+        <a href="gifts.html">الهدايا</a>
+      </nav>
+      <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
+      <!-- التبديل للسلة -->
+      <input type="checkbox" id="cart-mol">
+      <div id="cart-page">
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items">السلة فارغة</div>
+        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- المحتوى -->
+  <div class="page-content">
+    <h2>قسم الهدايا</h2>
+    <p>مجموعة مختارة من أجمل الهدايا لجميع المناسبات.</p>
+    <div class="products-grid">
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ZDyXhB0Qsstz0HC-T2_C9QAAAA%3Fpid%3DApi&f=1&ipt=140359e1d263be62d4cc2ced04de64216731cf4b32ba11d5597e43c955c4758e&ipo=images"
+          alt="هدية مغلفة">
+        <h4>هدية مغلفة</h4>
+        <p>$ 50</p>
+        <label><button class="btn" onclick="setPending('هدية مغلفة - $50')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.OX4icAB1Rm0EXkTYfnW98AHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=831fa09852e86a478536e5911e247c7808aaff33f1a4fca9a021c357f45f28dc&ipo=images"
+          alt="باقة ورد">
+        <h4>باقة ورد</h4>
+        <p>$ 20</p>
+        <label><button class="btn" onclick="setPending('باقة ورد - $20')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.CanxhArhqd_rbu-msJ1WqQHaHa%3Fpid%3DApi&f=1&ipt=865b2481e135ff55c5c220a024181b6f949da6fce57db13538e23fbd9ea44a1c&ipo=images"
+          alt="ساعة يد">
+        <h4>ساعة يد</h4>
+        <p>$ 50</p>
+        <label><button class="btn" onclick="setPending('ساعة يد - $50')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ScX7EG9o3pM5fPQzYwsMdQHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=5923fbfc94a5e4ede29301b307a2d4275b647620f7d3219059d025182b7e5780&ipo=images"
+          alt="طقم اكسسوارات ">
+        <h4> طقم اكسسوارات</h4>
+        <p>$ 20</p>
+        <label><button class="btn" onclick="setPending('طقم اكسسوارات - $20')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.TKtCIyFFlO_mSb8qPBgTugHaHa%3Fpid%3DApi&f=1&ipt=0378ec9cebf3299cb41950a7098a811ed256089b3a505a4fc49b725f7a8fb07c&ipo=images"
+          alt=" عطور">
+        <h4>عطور </h4>
+        <p>$ 30</p>
+        <label><button class="btn" onclick="setPending('عطور - $30')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.alromaizan.com%2Fimage%2Fupload%2Fv1682709501%2Fmedia%2Fproduct%2F4GgqYqGP-21k-cavo-monaco-chain-gold-set.jpg&f=1&nofb=1&ipt=566d7411c585b794ec7e87de0ca947018b1673d564d89269095468cfc0eb3eb6"
+          alt="ذهب ">
+        <h4>ذهب </h4>
+        <p>$ 200</p>
+        <label><button class="btn" onclick="setPending('ذهب - $200')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- التبديل للتأكيد -->
+  <input type="checkbox" id="confirm-toggle">
+  <div class="confirm-box">
+    <div class="confirm-content">
+      <p id="confirm-text"></p>
+      <button class="yes" onclick="addItem()">موافق</button>
+      <label for="confirm-toggle" class="no">إلغاء</label>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

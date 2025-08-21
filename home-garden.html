@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنزل والحديقة - مول البسمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="مول البسمة">
+        <div>
+          <h2>مول البسمة</h2>
+          <p>مكان الراحة والتسوق</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="clothes.html">الملابس</a>
+        <a href="electronics.html">الإلكترونيات</a>
+        <a href="home-garden.html">المنزل والحديقة</a>
+        <a href="sports.html">الرياضة</a>
+        <a href="kids.html">الأطفال</a>
+        <a href="beauty.html">الجمال والعناية</a>
+        <a href="restaurants.html">المطاعم</a>
+        <a href="gifts.html">الهدايا</a>
+      </nav>
+
+      <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
+      <!-- التبديل للسلة -->
+      <input type="checkbox" id="cart-mol">
+      <div id="cart-page">
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items">السلة فارغة</div>
+        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- المحتوى -->
+  <div class="page-content">
+    <h2>قسم المنزل والحديقة</h2>
+    <p>كل ما تحتاجه لتجهيز منزلك وحديقتك بأجود المنتجات.</p>
+    <div class="products-grid">
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.LymR2SuvoxDMdEO56fleKQHaHa%3Fpid%3DApi&f=1&ipt=ad6e195c7b53f9c95e77fb10c319e8096dacd39466f4e77181713097104ba920&ipo=images"
+          alt="أثاث منزلي">
+        <h4>أثاث منزلي</h4>
+        <p>$ 1500</p>
+        <label><button class="btn" onclick="setPending('أثاث منزلي - $1500')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.7nfYvohjhcGS_8g8Rm39CAHaHa%3Fpid%3DApi&f=1&ipt=6891fc5a9847ff8a67be98a291a76016b6500926a236f930c94227366cabe41f&ipo=images"
+          alt="أدوات مطبخ">
+        <h4>أدوات مطبخ</h4>
+        <p>$ 50</p>
+        <label><button class="btn" onclick="setPending('أدوات مطبخ - $50')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.NjAjhQRntezGS5Ta3vraPwHaHa%3Fpid%3DApi&f=1&ipt=256e37ac4c0805bbf4c8532b74c0b3fdcfb74220ecf149f7abd2ca9c89f17bc7&ipo=images"
+          alt="أدوات حدائق">
+        <h4>أدوات حدائق</h4>
+        <p>$ 25</p>
+        <label><button class="btn" onclick="setPending('أدوات حدائق - $25')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.btJoURy1V0Xy3drztTqccgHaHa%3Fpid%3DApi&f=1&ipt=41230d0e895de06d992ad45d0d5ad849a5dd8bf71aec59947ef31dd130d18fc0&ipo=images"
+          alt="اثاث حدائق">
+        <h4>أثاث حدائق</h4>
+        <p>$ 500</p>
+        <label><button class="btn" onclick="setPending('أثاث حدائق - $500')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.8fV3PeEJPkMEjpnHS6xChwHaHa%3Fpid%3DApi&f=1&ipt=7a10c7d66779e7108c9bbf81542893458d06989a6ef39ee15a94969352ba7107&ipo=images"
+          alt="أدوات تنظيف">
+        <h4>أدوات تنظيف</h4>
+        <p>$ 20</p>
+        <label><button class="btn" onclick="setPending('أدوات تنظيف - $20')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.WBH6ZN4m_qbRQpCl_stFeQHaHQ%3Fr%3D0%26pid%3DApi&f=1&ipt=dfc4bf87cc9cf509a0b3e4bd9c5b4f561cf5b3b1d1a4c0c3cb76b4601ed5f299&ipo=images"
+          alt="غرفة اطفال ">
+        <h4>غرفة اطفال</h4>
+        <p>$ 2000</p>
+        <label><button class="btn" onclick="setPending('غرفة اطفال - $2000')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+    </div>
+  </div>
+  <!-- التبديل للتأكيد -->
+  <input type="checkbox" id="confirm-toggle">
+  <div class="confirm-box">
+    <div class="confirm-content">
+      <p id="confirm-text"></p>
+      <button class="yes" onclick="addItem()">موافق</button>
+      <label for="confirm-toggle" class="no">إلغاء</label>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

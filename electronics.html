@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الإلكترونيات - مول البسمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="مول البسمة">
+        <div>
+          <h2>مول البسمة</h2>
+          <p>مكان الراحة والتسوق</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="clothes.html">الملابس</a>
+        <a href="electronics.html">الإلكترونيات</a>
+        <a href="home-garden.html">المنزل والحديقة</a>
+        <a href="sports.html">الرياضة</a>
+        <a href="kids.html">الأطفال</a>
+        <a href="beauty.html">الجمال والعناية</a>
+        <a href="restaurants.html">المطاعم</a>
+        <a href="gifts.html">الهدايا</a>
+      </nav>
+      <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
+      <!-- التبديل للسلة -->
+      <input type="checkbox" id="cart-mol">
+      <div id="cart-page">
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items">السلة فارغة</div>
+        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- المحتوى -->
+  <div class="page-content">
+    <h2>قسم الإلكترونيات</h2>
+    <p>أحدث الأجهزة الإلكترونية من أشهر العلامات التجارية العالمية.</p>
+    <div class="products-grid">
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.ndeJkhBuT4gkOiGreBCwsQHaHa%3Fpid%3DApi&f=1&ipt=d90ad4af7699c41f0618306c538500762dec958c8b6201bf5ebe0abab24879dd&ipo=images"
+          alt="حاسوب محمول">
+        <h4>حاسوب محمول</h4>
+        <p>$ 1000</p>
+        <label><button class="btn" onclick="setPending('حاسوب محمول - $1000')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+          alt="هاتف ذكي">
+        <h4>هاتف ذكي</h4>
+        <p>$ 500</p>
+        <label><button class="btn" onclick="setPending('هاتف ذكي - $500')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP._5mVY2JWposl38qdW44FAQHaHa%3Fpid%3DApi&f=1&ipt=6780312afae8a64a31c83508d0d076cc0c1bc69ed98f218a89611c0f5a2df5b6&ipo=images"
+          alt="سماعات رأس">
+        <h4>سماعات رأس</h4>
+        <p>$ 40</p>
+        <label><button class="btn" onclick="setPending('سماعات رأس - $40')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.puX8JSHq13kWukknB8coXAHaHa%3Fpid%3DApi&f=1&ipt=54023e070cb4e478c67f79622d205b9554ffef13a81aafdbafde2a36d765a147&ipo=images"
+          alt="ساعة أبل">
+        <h4>ساعة أبل</h4>
+        <p>$ 150</p>
+        <label><button class="btn" onclick="setPending('ساعة أبل - $150')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.Sf3x5q19ZcySU1fi224WYAHaHa%3Fpid%3DApi&f=1&ipt=ea1734a0cd639ab643ae25bb33fdf524c7d3b77c0fab3d6d4db076e310fb50b7&ipo=images"
+          alt=" ايباد">
+        <h4>ايباد</h4>
+        <p>$ 200</p>
+        <label><button class="btn" onclick="setPending('ايباد - $200')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.lBWX6mM3O6V5lcPnt5-XLQHaHa%3Fpid%3DApi&f=1&ipt=888382ca92dd08068de765c4477143c1a06facb57ccd3c1063a074873386dad3&ipo=images"
+          alt="قرص متحرك">
+        <h4>قرص متحرك</h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('قرص متحرك - $15')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+    </div>
+  </div>
+  <!-- التبديل للتأكيد -->
+  <input type="checkbox" id="confirm-toggle">
+  <div class="confirm-box">
+    <div class="confirm-content">
+      <p id="confirm-text"></p>
+      <button class="yes" onclick="addItem()">موافق</button>
+      <label for="confirm-toggle" class="no">إلغاء</label>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
