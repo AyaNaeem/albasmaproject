@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المطاعم - مول البسمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="مول البسمة">
+        <div>
+          <h2>مول البسمة</h2>
+          <p>مكان الراحة والتسوق</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="clothes.html">الملابس</a>
+        <a href="electronics.html">الإلكترونيات</a>
+        <a href="home-garden.html">المنزل والحديقة</a>
+        <a href="sports.html">الرياضة</a>
+        <a href="kids.html">الأطفال</a>
+        <a href="beauty.html">الجمال والعناية</a>
+        <a href="restaurants.html">المطاعم</a>
+        <a href="gifts.html">الهدايا</a>
+      </nav>
+
+      <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
+      <!-- التبديل للسلة -->
+      <input type="checkbox" id="cart-mol">
+      <div id="cart-page">
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items">السلة فارغة</div>
+        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- المحتوى -->
+  <div class="page-content">
+    <h2>قسم المطاعم</h2>
+    <p>تجربة طعام متنوعة من أفضل المطاعم المحلية والعالمية.</p>
+    <div class="products-grid">
+      <div class="product">
+        <img src="https://i.pinimg.com/474x/a7/d3/be/a7d3be6bb3175d60722f0fe9af214a70.jpg" alt="بيتزا">
+        <h4>بيتزا</h4>
+        <p>$ 12</p>
+        <label><button class="btn" onclick="setPending('بيتزا - $12')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20230414%2Foriginal%2Fpngtree-isolated-burger-on-transparent-background-png-image_9055072.png&f=1&nofb=1&ipt=6aa175c8456751ce1b3914d70f002467cbd4368acde1e32ab917f071a0b10e25"
+          alt="برجر">
+        <h4>برجر</h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('برجر - $15')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.HD51ZElFnV8kATf_chRTBQHaHa%3Fpid%3DApi&f=1&ipt=2d51a1ab9b5294e09c375f9dc982e287fd6efe22b157b344e8241ed81aee77ef&ipo=images"
+          alt="قهوة">
+        <h4>قهوة</h4>
+        <p>$ 5</p>
+        <label><button class="btn" onclick="setPending('قهوة - $5')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.BI-cxnRgItv_wRWZHfDiXAHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=35c7ccfdee75180fc7c8d9faa53e4329c479cead0ba63911f10c0edd4a7ccb11&ipo=images"
+          alt="نسكافيه">
+        <h4>نسكافيه</h4>
+        <p>$ 5</p>
+        <label><button class="btn" onclick="setPending('نسكافيه - $5')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.EtOH4mHRXPOItjpUu_BNogHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=478a8730d19fcd170c5f0e0d44db4820dd1b35e28591dab9e54de1ef57b6bb35&ipo=images"
+          alt="تشيو كيك ">
+        <h4>تشيز كيك</h4>
+        <p>$ 8</p>
+        <label><button class="btn" onclick="setPending('تشيز كيك - $8')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.rrpn4AF15ckVBnH6TaYmpAHaHa%3Fpid%3DApi&f=1&ipt=cb3e7bcca4493157b254c49ddcb376a59b993624f700f3909520ec54074068df&ipo=images"
+          alt="شاورما">
+        <h4>شاورما</h4>
+        <p>$ 10</p>
+        <label><button class="btn" onclick="setPending('شاورما - $10')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- التبديل للتأكيد -->
+  <input type="checkbox" id="confirm-toggle">
+  <div class="confirm-box">
+    <div class="confirm-content">
+      <p id="confirm-text"></p>
+      <button class="yes" onclick="addItem()">موافق</button>
+      <label for="confirm-toggle" class="no">إلغاء</label>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

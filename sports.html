@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرياضة واللياقة - مول البسمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="مول البسمة">
+        <div>
+          <h2>مول البسمة</h2>
+          <p>مكان الراحة والتسوق</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="clothes.html">الملابس</a>
+        <a href="electronics.html">الإلكترونيات</a>
+        <a href="home-garden.html">المنزل والحديقة</a>
+        <a href="sports.html">الرياضة</a>
+        <a href="kids.html">الأطفال</a>
+        <a href="beauty.html">الجمال والعناية</a>
+        <a href="restaurants.html">المطاعم</a>
+        <a href="gifts.html">الهدايا</a>
+      </nav>
+
+      <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
+      <!-- التبديل للسلة -->
+      <input type="checkbox" id="cart-mol">
+      <div id="cart-page">
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items">السلة فارغة</div>
+        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- المنتجات -->
+  <div class="page-content">
+    <h2>قسم الرياضة واللياقة</h2>
+    <p>معدات وأدوات رياضية لممارسة جميع أنواع الأنشطة البدنية.</p>
+    <div class="products-grid">
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.GeTsRMej87Q6XiKp3Zm8SwHaHa%3Fpid%3DApi&f=1&ipt=dc33cc8e92f029dc3d9edc754b9d5b54885e4645c67023948049d14ff14e5bb8&ipo=images"
+          alt="كرة قدم">
+        <h4>كرة قدم</h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('كرة قدم - $15')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.pTKdC7DafQonnrl-wTih3QHaHN%3Fpid%3DApi&f=1&ipt=20d50c58ea4c4b6cf877aaceac94c790a60d08a436674a0a9762b7a33f9e4e93&ipo=images"
+          alt="أوزان رياضية">
+        <h4>أوزان رياضية</h4>
+        <p>$ 55</p>
+        <label><button class="btn" onclick="setPending('أوزان رياضية - $55')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.99pAe7l3EcqNvBDs1rkX8wHaHa%3Fpid%3DApi&f=1&ipt=e21689e126a1481243166446db88cf1f2c9ac9c5e265e3e7a32d636456b4fb26&ipo=images"
+          alt="دراجة هوائية">
+        <h4>دراجة هوائية</h4>
+        <p>$ 70</p>
+        <label><button class="btn" onclick="setPending('دراجة هوائية - $70')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.RGXhBnH2qaTZimjDF4rvTgHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=e77fd7f641baf1e627344c4998abbfec9a601b418757d0e19b329479920d787f&ipo=images"
+          alt="مضرب تنس ">
+        <h4>مضرب تنس</h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('مضرب تنس - $15')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.hpZz--Jkn-MN4fs1UdVNgwHaHa%3Fpid%3DApi&f=1&ipt=eb6c5a5235599004646554a555d1aa93744b1c42c864df943e9b35769336b1a7&ipo=images"
+          alt="جهاز جري ">
+        <h4>جهاز جري </h4>
+        <p>$ 120</p>
+        <label><button class="btn" onclick="setPending('جهاز جري - $120')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.8hE78nPvO_tkdHG_bH1hngHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=9042d835f2c79261bee8baf2bfd7210092ee0297c84b7258587341acc5ef8f8f&ipo=images"
+          alt="قفازات ملاكمة ">
+        <h4>قفازات ملاكمة </h4>
+        <p>$ 20</p>
+        <label><button class="btn" onclick="setPending('قفازات ملاكمة - $20')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- التبديل للتأكيد -->
+  <input type="checkbox" id="confirm-toggle">
+  <div class="confirm-box">
+    <div class="confirm-content">
+      <p id="confirm-text"></p>
+      <button class="yes" onclick="addItem()">موافق</button>
+      <label for="confirm-toggle" class="no">إلغاء</label>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

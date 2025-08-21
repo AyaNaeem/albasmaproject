@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأطفال والألعاب - مول البسمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="مول البسمة">
+        <div>
+          <h2>مول البسمة</h2>
+          <p>مكان الراحة والتسوق</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="clothes.html">الملابس</a>
+        <a href="electronics.html">الإلكترونيات</a>
+        <a href="home-garden.html">المنزل والحديقة</a>
+        <a href="sports.html">الرياضة</a>
+        <a href="kids.html">الأطفال</a>
+        <a href="beauty.html">الجمال والعناية</a>
+        <a href="restaurants.html">المطاعم</a>
+        <a href="gifts.html">الهدايا</a>
+      </nav>
+
+      <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
+      <!-- التبديل للسلة -->
+      <input type="checkbox" id="cart-mol">
+      <div id="cart-page">
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items">السلة فارغة</div>
+        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- المحتوى -->
+  <div class="page-content">
+    <h2>قسم الأطفال والألعاب</h2>
+    <p>ألعاب تعليمية وترفيهية للأطفال من جميع الأعمار.</p>
+    <div class="products-grid">
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20210311%2Foriginal%2Fpngtree-cube-entertainment-color-blocks-png-image_6043870.jpg&f=1&nofb=1&ipt=4cd7819d00078169e563a6c94da378dc47d0ae56d5cecc77334a673bdb4ad973"
+          alt="لعبة مكعبات">
+        <h4>لعبة مكعبات</h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('لعبة مكعبات - $15')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.--wjKu-j7bJWBhXhS8QKugHaHa%3Fpid%3DApi&f=1&ipt=46ba2b8a5f4f084825665130b7058429e9bb0783299aaa75b644c74edb211429&ipo=images"
+          alt="دمية دب">
+        <h4>دمية دب</h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('دمية دب - $15')" for="confirm-toggle">اطلب الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.xKGcLuYpZu8XJpteF638SwHaHa%3Fpid%3DApi&f=1&ipt=d08a40de009a57f4d2d7fd069b324c2dc73c0347f41de6d3bec741e9dc8981e4&ipo=images"
+          alt="سيارة لعبة">
+        <h4>سيارة لعبة</h4>
+        <p>$ 10</p>
+        <label><button class="btn" onclick="setPending('سيارة لعبة - $10')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.jr3uTz4jNo-CNU7YCWlNCAHaHa%3Fpid%3DApi&f=1&ipt=738ce583d6f3f26b03fe90ec42965459ed33d0a8b176fad3e8492f676ba4cd03&ipo=images"
+          alt="دمية عروسة">
+        <h4>دمية عروسة</h4>
+        <p>$ 10</p>
+        <label><button class="btn" onclick="setPending('دمية عروسة - $10')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.EufWgSXCZ1Qp2SLp42qN3gHaHa%3Fpid%3DApi&f=1&ipt=a5950bbe0a7af2968e5bbf9cfa405e717ad257b3f67c2b0d9e45a3dc18755b14&ipo=images"
+          alt="دراجة هوائية ">
+        <h4>دراجة هوائية</h4>
+        <p>$ 30</p>
+        <label><button class="btn" onclick="setPending('دراجة هوائية - $30')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+      <div class="product">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.HC7YWcAR9ZAaY9t3p0az3wHaHa%3Fpid%3DApi&f=1&ipt=40c516099272237f3a91deb12066264c733214ee419199faf6149a648a7ac88d&ipo=images"
+          alt="لعبة تعليمية">
+        <h4>لعبة تعليمية </h4>
+        <p>$ 15</p>
+        <label><button class="btn" onclick="setPending('لعبة تعليمية - $15')" for="confirm-toggle">اطلب
+            الآن</button></label>
+      </div>
+
+    </div>
+  </div>
+  <!-- التبديل للتأكيد -->
+  <input type="checkbox" id="confirm-toggle">
+  <div class="confirm-box">
+    <div class="confirm-content">
+      <p id="confirm-text"></p>
+      <button class="yes" onclick="addItem()">موافق</button>
+      <label for="confirm-toggle" class="no">إلغاء</label>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
