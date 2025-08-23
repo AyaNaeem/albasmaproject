@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-/* الهيدر */
+/* headeer */
 .header {
   background-color: #d1acaa;
   display: flex;
@@ -45,7 +45,7 @@ a {
   color: #444444;
 }
 
-/* قائمة التنقل */
+/*transfer menu */
 .nav {
   display: flex;
   justify-content: center;
@@ -64,23 +64,23 @@ a {
   background-color: #d09691;
 }
 
-/* --- السلة --- */
+/* --- cart --- */
 #cart-mol {
   display: none;    /* to hide the checkbox*/
 }
 
 #cart-page {
-  position: fixed; /*العنصر يثبت بمكانه  يعني حتى لو عملتِ سكرول، رح يضل العنصر ثابت.*/
-  top: 0;       /*يخليه يبدأ من أعلى اليمين (الزاوية العليا اليمنى للصفحة).*/
+  position: fixed; /*The element holds in place means that even if you scroll, the element will remain stationary.*/
+  top: 0;       /*Make it start from the top right (top right corner of the page)*/
   right: 0;
   width: 30%;
   height: 100%;
   background-color: #edd8d0;
   padding: 20px;
-  transform: translateX(100%);   /*يحرك العنصر كاملًا بمحور X (يمينًا) بمقدار 100% من عرضه → يعني بيكون مخفي برة الشاشة من الجهة اليمنى.*/
-  transition: .3s;/*أي تغيير يصير على الخصائص (مثل transform) رح يصير بانسيابية خلال 0.3 ثانية.*/
-  overflow: auto;/*لو المحتوى الداخلي أطول من الشاشة، يضيف Scroll تلقائي.*/
-  z-index: 20;   /*يخلي العنصر فوق العناصر الأخرى (الأولوية بالعرض).*/
+  transform: translateX(100%);   /*Moves the entire element on the X-axis (right) at 100% of its width→ which means that the screen is hidden from the right side.*/
+  transition: .3s;/*Any change to properties (e.g. transform) will be streamlined within 0.3 seconds.*/
+  overflow: auto;/*If the internal content is longer than the screen, it adds automatic scrolling.*/
+  z-index: 20;   /*Clears the item above the other items (priority by width).*/
 }
 
 /*يعني الصفحة (السلة) مخفية على يمين الشاشة.
@@ -91,7 +91,7 @@ a {
 
 .cart {
   cursor: pointer;
-  position: relative;   /*  يعتبر مرجع لselectors  الي موجود فيها  absolute*/
+  position: relative;   /*  It is considered a reference for the selectors that are in it absolute*/
 }
 
 .cart-count {
@@ -100,9 +100,9 @@ a {
   font-size: 10px;
   padding: 1px 6px;
   border-radius: 50%;
-  position: absolute;    /*  يثبت العداد فوق السلة*/
-  top: -6px;     /*يحرك العنصر للأعلى 6px خارج حدود السلة.*/
-  right: -8px;   /*يحركه لليمين 8px خارج حدود السلة.*/
+  position: absolute;    /* The meter is mounted on top of the basket**/
+  top: -6px;     /*Moves the item up 6px outside the basket boundary.*/
+  right: -8px;   /*Move it right 8px outside the basket boundary.*/
 }
 .btn {
   width: 50%;
@@ -137,7 +137,7 @@ a {
   right: 0;
   bottom: 0;
   background-color: rgba(110, 110, 110, 0.5);
-  /* طبقة مظلمة شفافة للتباين */
+  /* Transparent dark layer for contrast*/
   z-index: 1;/* appear under the greater value */
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
