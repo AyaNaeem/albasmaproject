@@ -9,8 +9,6 @@
 </head>
 
 <body>
-
-  <!-- الهيدر -->
   <header>
     <div class="header">
       <div class="logo">
@@ -20,7 +18,7 @@
           <p>مكان الراحة والتسوق</p>
         </div>
       </div>
-
+      <!--Display the store categories in the navigation bar-->
       <nav class="nav" id="nav-menu">
         <a href="index.html">الرئيسية</a>
         <a href="clothes.html">الملابس</a>
@@ -32,19 +30,19 @@
         <a href="restaurants.html">المطاعم</a>
         <a href="gifts.html">الهدايا</a>
       </nav>
-
       <label class="cart" for="cart-mol">🛒 <span class="cart-count" id="cart-count">0</span></label>
-      <!-- التبديل للسلة -->
+      <!--Send the purchases to the cart with a PayPal payment button and a back button to the previous page.-->
       <input type="checkbox" id="cart-mol">
       <div id="cart-page">
         <h2>سلة المشتريات</h2>
         <div id="cart-items">السلة فارغة</div>
-        <label for="cart-mol" class="btn" style="margin-top:20px;">العودة</label>
+        <label class="btn"><a href="https://www.paypal.com/paypalme/اسم_الحساب" target="_blank" >💰 دفع عبر PayPal</a></label>
+        <label for="cart-mol" class="btn" >العودة</label>
       </div>
     </div>
   </header>
 
-  <!-- المحتوى -->
+  <!-- The page displays product images along with their names, prices, and an order button. -->
   <div class="page-content">
     <h2>قسم الجمال والعناية</h2>
     <p>منتجات التجميل والعناية بالبشرة والشعر من أفضل الماركات.</p>
@@ -55,6 +53,7 @@
           alt="عطر نسائي">
         <h4>عطر نسائي</h4>
         <p> $ 20 </p>
+        <!--The button 'Order Now',when pressed it calls the setPending function and sends the text inside the quotation marks to add the order to the cart.-->
         <label><button class="btn" onclick="setPending('عطر نسائي - $20')" for="confirm-toggle">اطلب
             الآن</button></label>
       </div>
@@ -64,6 +63,7 @@
           alt="مجموعة عناية بالبشرة">
         <h4>مجموعة عناية بالبشرة</h4>
         <p> $ 30 </p>
+        <!--The button 'Order Now',when pressed it calls the setPending function and sends the text inside the quotation marks to add the order to the cart.-->
         <label><button class="btn" onclick="setPending('مجموعة عناية بالبشرة - $30')" for="confirm-toggle">اطلب
             الآن</button></label>
       </div>
@@ -106,7 +106,7 @@
     </div>
   </div>
 
-  <!-- التبديل للتأكيد -->
+  <!-- Order Confirmation Icon-->
   <input type="checkbox" id="confirm-toggle">
   <div class="confirm-box">
     <div class="confirm-content">
@@ -115,11 +115,13 @@
       <label for="confirm-toggle" class="no">إلغاء</label>
     </div>
   </div>
-  <!-- الفوتر -->
+  
+  <!-- designing the footer -->
   <footer class="footer">
+  <!--link for contact with technical support-->
+    <a href="https://wa.me/970592465010" target="_blank">💬 تواصل مع الدعم الفني</a>
     <p>© 2025 مول البسمة , جميع الحقوق محفوظة</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 
