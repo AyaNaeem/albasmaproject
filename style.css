@@ -255,3 +255,151 @@ a {
   padding: 15px 10px;
   margin-top: auto;   /* footer stil in the bottom of the page*/
 }
+/* --- نافذة التأكيد --- */
+#confirm-toggle {
+  display: none;
+}
+
+.confirm-box {
+  position: fixed;/*The element holds in place relative to the browser window, even when scrolling it stays in the same place*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /*Makes its content use the Flexbox system*/
+  align-items: center; /*Vertically centered content*/
+  justify-content: center; /*Center content horizontally*/
+  background: rgba(0, 0, 0, .4);
+  opacity: 0; /*Initially the element is fully transparent (invisible)*/
+  pointer-events: none; /*Prevents interaction with the item if it is hidden*/
+  transition: .3s;
+  z-index: 30;/*Makes it above the rest of the elements on the page*/
+}
+
+#confirm-toggle:checked+.confirm-box {
+  opacity: 1;/*Makes the box visible*/
+  pointer-events: auto;/*Allows interaction with the box (e.g. clicking)*/
+}
+
+.confirm-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.yes,
+.no {
+  margin: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;/*When you hover the button, the cursor turns into a hand*/
+}
+
+.yes {
+  background: green;
+  color: #fff;
+}
+
+.no {
+  background: red;
+  color: #fff;
+}
+
+/* المنتجات */
+.page-content {
+  width: 60%;
+  margin: 20px auto;
+  padding: 0 16px 48px 16px;
+}
+
+.page-content h2 {
+  margin-bottom: 8px;
+  color: rgb(2, 20, 137);
+  font-size: 30px;
+}
+
+.page-content p {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+/* شبكة المنتجات */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*Try to create as many
+   columns as possible that fit the width of the container.*/
+  gap: 25px;
+}
+
+.product {
+  border: 2px solid #ae8075;
+  border-radius: 10px;
+  overflow: hidden;/*Hide any piece of content that exceeds the boundaries of the element*/
+  background-color: #fafafa;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.product:hover {
+  transform: translateY(-5px);/*Move up by 5 px (negative value = up, positive = down).*/
+}
+
+.product img {
+  width: 100%;
+  object-fit: cover;/*Fills the container completely*/
+}
+
+.product h4 {
+  margin: 10px 0 5px;
+  color: rgb(2, 20, 137);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.product p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #336990;
+}
+
+
+/*  Media Queries */
+
+/* large screen  */
+@media screen and (min-width: 1025px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* medium screen*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* small screen (mobile)*/
+@media screen and (max-width: 767px) {
+
+  .nav {
+    display: none;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 70%;
+  }
+ .feature{
+  margin-right: 30px;
+ }
+}
